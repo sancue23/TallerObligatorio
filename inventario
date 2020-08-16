@@ -1,0 +1,9 @@
+[redhat]
+centosobligatorio ansible_host=192.168.56.109
+
+[debian]
+ubuntuobligatorio ansible_host=192.168.56.110
+
+[webserver:children]
+redhat
+debian
